@@ -20,3 +20,42 @@ is_hurt(){
 	fi
 }
 is_hurt
+
+cat <<EOF > potioneer
+#!/usr/bin/env bash 
+
+if [[ \$1 == poem ]]; then
+	echo -e "Excellent!\n Here, Have a potion of health\n You should add it to your inventory\n"
+	cat <<'INNER_EOF' > potion_of_health
+	Potion of Health
+
+	Add it to your inventory with:
+
+	< I=poh,\$I >
+
+	We will use 'poh' since its shorter
+INNER_EOF
+	exit 0
+fi
+
+echo -e "well hello there traveller!\n "
+echo -e "I am the potioneer\n"
+echo -e "Anything you desire\n"
+echo -e "I can brew\n"
+echo -e "But not for free of course\n"
+echo -e "and not for everyone!\n"
+echo -e "To you I shall sell a potion of health\n"
+echo -e "for I see that you are bleeding\n"
+echo -e "The price of which is cheap\n"
+echo -e "\tDo you wanna know? y/n \n"
+read -r ans 
+
+if [[ \$ans  == y ]]; then
+	echo -e "Long ago on my way here, I read a poem, which I have forgotton\n"
+	echo -e "If you bring it to me, I'll trade you for a potion\n"
+	echo -e "Simply run me and append the poem to the command\n"
+	echo -e "./potioneer poem\n"
+fi
+EOF
+
+chmod +x potioneer
