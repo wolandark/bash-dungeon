@@ -2,13 +2,14 @@
 /\                                                                  \
 \_| Welcome To The Bash Dungeon!                                    |
   |                                                                 |
-  | In this game you will crawl a series of dungeons                |
+  | In this game you will crawl a series of dungeons(directories)   |
   | and learn about your shell by using pure bash spells(commands). |
   |                                                                 |
   | The dungeon rooms are directories, you use *cd* to enter them.  |
   | To look around, you use your torch with the *ls* spell.         |
   | To read the parchments you find, use the *cat* spell.           |
   |                                                                 |
+  | ALWAYS READ THE PARCHMENTS FIRST, THEY CONTAIN IMPORTANT INFO!  |
   | Good Luck!                                                      |
   |   ______________________________________________________________|_
    \_/________________________________________________________________/
