@@ -1,0 +1,31 @@
+ /"\/\_..--------------------------------------------------------------._/\/"\
+(     _||                                                             ||_     )
+ \_/\/ || So far you have learned to assign values to variables       || \/\_/
+       ||                                                             ||
+       || and print them with echo.                                   ||
+       ||                                                             ||
+       || You have probably also realized that assigning a new        ||
+       ||                                                             ||
+       || value to a variable overrides the previous value,           ||
+       ||                                                             ||
+       || which is the point of a variable.                           ||
+       ||                                                             ||
+       || But what if you want to add a value to the already existing ||
+       ||                                                             ||
+       || value in the variable?                                      ||
+       ||                                                             ||
+       || For example, you might want to keep the short sword and add ||
+       ||                                                             ||
+       || the long sword to your inventory as well.                   ||
+       ||                                                             ||
+       || In that case, use the following syntax:                     ||
+       ||                                                             ||
+       || *I=long_sword,$I*                                           ||
+       ||                                                             ||
+       || With that, the long_sword gets added to your inventory and  ||
+       ||                                                             ||
+       || if you echo $I, you will see that both items are in there.  ||
+       ||                                                             ||
+ /"\/\_|---------------------------------------------------------------|_/\/"\
+(     _|                                                               |_     )
+ \_/\/ `---------------------------------------------------------------' \/\_/

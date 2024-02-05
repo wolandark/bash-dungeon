@@ -1,0 +1,22 @@
+#!/usr/bin/env bash 
+
+cat <<EOF 
+
+The path is thorny and rigid.
+
+You should be careful where you thread.
+
+Everything can hurt you and everything will!
+
+EOF
+
+is_hurt(){
+	if [[ -z $HP ]]; then
+		echo -e "You must set your HP to play!\n"
+	else
+		(( HP -= 1 ))
+		echo -e "Thorns pierce your toes"
+		echo -e "Your HP is: $HP \n"
+	fi
+}
+is_hurt

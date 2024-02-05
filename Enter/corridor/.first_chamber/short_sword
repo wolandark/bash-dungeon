@@ -1,0 +1,13 @@
+
+You found a short sword!
+
+Create a variable to add it to your inventory.
+
+I=short_sword
+
+You can view your inventory with:
+
+echo $I
+
+Now that you have a sword, try to kill the rat!
+

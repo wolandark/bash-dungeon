@@ -1,0 +1,42 @@
+#!/usr/bin/env bash 
+
+lock_val=$(cat poem | wc -l)
+
+echo -e "This chest is locked!\nYou need the proper key to enter!"
+
+echo "Enter Key value: "
+read -r val
+
+cat <<EOF >../spell
+###############################################
+# *cat filename  | wc -l*                     #
+#                                             #     
+# There are many ways to count words or lines #
+#                                             #
+# in the shell. This is one of them.          #
+#                                             #
+# #############################################
+EOF
+
+if [[ $val != "$lock_val" ]]; then
+	echo "Wrong!"
+	exit 0
+else
+	echo "Correct! You found 10 gold coins!"
+fi
+
+cat <<EOF >gold
+
+Here are 10 gold coins.
+
+Create a *gold* variable and asign the value of 10 to it.
+
+*gold=10*
+
+You can always check your gold with:
+
+echo $gold
+
+EOF
+
+mv .garden_of_mitra garden_of_mitra

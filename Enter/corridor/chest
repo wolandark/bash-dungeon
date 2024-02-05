@@ -1,0 +1,23 @@
+#!/bin/sh 
+
+cat <<EOF
+
+You find an amulet of color.
+
+To use it, attach it to your torch with
+
+*--color=always*
+
+You can also set an alias for it like:
+
+*alias ls='ls --color=always'*
+
+From now on, scripts, files and directories 
+
+Will have a different color
+
+Neat huh?
+
+EOF
+
+mv .first_chamber first_chamber >>/dev/null
