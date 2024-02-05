@@ -2,6 +2,15 @@
 
 if [[ $1 == poem ]]; then
 	echo -e "Excellent!\n Here, Have a potion of health\n You should add it to your inventory\n"
+	cat <<EOF > potion_of_health
+	Potion of Health
+
+	Add it to your inventory with:
+
+	*I=poh,\$I*
+
+	We will use 'poh' since its shorter
+EOF
 	exit 0
 fi
 
