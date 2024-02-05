@@ -1,0 +1,27 @@
+ _________________________________________________________________________________
+/\                                                                                \
+\_|                                                                               |
+  | By now, your prompt must be extremely long and annoying to work with.         |
+  |                                                                               |
+  | The prompt is the text to left of where your cursor is in your terminal.      |
+  |                                                                               |
+  | The prompt is set from the PS1 variable.                                      |
+  |                                                                               |
+  | We can change it and customize it to our hearts content.                      |
+  |                                                                               |
+  | For now, lets make the current prompt tell the cursor to jump down a line     |
+  |                                                                               |
+  | so that you can type easier.                                                  |
+  |                                                                               |
+  | Enter this spell:                                                             |
+  | < export PS1=$PS1'\n' >                                                       |
+  |                                                                               |
+  | Now you can type below your prompt                                            |
+  |                                                                               |
+  | We didn't want to change your current prompt info, so we just added a '\n' to |
+  |                                                                               |
+  | the end of it.                                                                |
+  |                                                                               |
+  | You can make this change permenant in the '~/.bashrc'                         |
+  |   ____________________________________________________________________________|_
+   \_/______________________________________________________________________________/
