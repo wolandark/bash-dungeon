@@ -27,12 +27,13 @@ cat <<EOF > potioneer
 if [[ \$1 == poem ]]; then
 	echo -e "Excellent!\n Here, Have a potion of health\n You should add it to your inventory\n"
 	mv .PS1 PS1
+	mv .room1 room1
 	cat <<'INNER_EOF' > potion_of_health
 	Potion of Health
 
 	Add it to your inventory with:
 
-	< I=poh,\$I >
+	< export I=poh,\$I >
 
 	We will use 'poh' since its shorter
 INNER_EOF

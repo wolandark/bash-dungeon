@@ -1,0 +1,52 @@
+#!/usr/bin/env bash 
+
+echo -e "This chest is locked!\nYou need the proper key to enter!"
+
+echo "Enter Key value: "
+read -r val
+
+unlock(){
+lock_val=256
+if [[ $val != "$lock_val" ]]; then
+	echo "Wrong!"
+	exit 0
+else
+	echo "Correct! You found a scroll of knowledge!"
+	cat <<'EOF' >scroll_of_knowledge
+ /"\/\_..-------------------------------------------------------------------------------._/\/"\
+(     _||                                                                              ||_     )
+ \_/\/ || Piping is the act of sewing commands together to change their output.        || \/\_/
+       ||                                                                              ||
+       || You have already used Piping when you used:                                  ||
+       ||                                                                              ||
+       || < cat poem | wc -l >                                                         ||
+       ||                                                                              ||
+       || In that spell, you piped the output of 'cat' to the input of 'wc -l'         ||
+       ||                                                                              ||
+       || and you saw that instead of getting the entire poem in your terminal         ||
+       ||                                                                              ||
+       || you got a line count.                                                        ||
+       ||                                                                              ||
+       || Almost everything in the shell is pipe-able.                                 ||
+       ||                                                                              ||
+       || Now try to find out how you can make 'grep' case insensitive by              ||
+       ||                                                                              ||
+       || piping < grep --help > to another instance of 'grep' that looks for the word ||
+       ||                                                                              ||
+       || 'case'                                                                       ||
+       ||                                                                              ||
+       || < grep --help | grep 'case' >                                                ||
+       ||                                                                              ||
+       || Then use that flag to look for the word 'pass' in the LoremIpsum file.       ||
+       ||                                                                              ||
+       || Hint:                                                                        ||
+       || < grep -i etc ... >                                                          ||
+       ||                                                                              ||
+ /"\/\_|--------------------------------------------------------------------------------|_/\/"\
+(     _|                                                                                |_     )
+ \_/\/ `--------------------------------------------------------------------------------' \/\_/
+EOF
+
+fi
+}
+unlock

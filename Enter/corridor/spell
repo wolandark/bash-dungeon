@@ -5,7 +5,7 @@
    # Use this power to identify what the chest is!                          #
    #                                                                        #
    # If you see a *#!bin*, it means that its a script, which you can run    #
-   # by preceeding it's name with *.*                                       #
+   # by preceeding it's name with *./*                                       #
    # Like *./chest*                                                         #
    #                                                                        #
    # BEHOLD!                                                                #

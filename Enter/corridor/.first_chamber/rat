@@ -5,7 +5,7 @@ sword_damage=5
 long_sword_damage=10
 
 has_sword(){
-	if [[ $I == short_sword ]]; then
+	if [[ $I == "short_sword" ]]; then
 		declare -g sword_type="short"
 		declare -g damage=$sword_damage
 	elif [[ $I == long_sword ]]; then

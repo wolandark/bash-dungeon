@@ -3,7 +3,7 @@ You found a long sword!
 
 Add it to your inventory.
 
-I=long_sword
+< export I=long_sword >
 
 You can view your inventory with:
 

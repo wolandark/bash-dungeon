@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------------
 --                                                                        --
--- cp is the word of power                                                --
+-- < cp > is the word of power                                            --
 --                                                                        --
 -- use it to copy files around your filesystem                            --
 --                                                                        --
--- remember that .. means one directory back and . means here.            --
+-- remember that < .. > means one directory back and < . > means here.    --
 --                                                                        --
 -- So you can copy something you've left behind into this directory like: --
 --                                                                        --
--- cp ../name_of_file .                                                   --
+-- < cp ../name_of_file . >                                               --
 --                                                                        --
 ----------------------------------------------------------------------------
