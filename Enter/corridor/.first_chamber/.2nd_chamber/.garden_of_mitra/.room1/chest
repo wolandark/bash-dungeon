@@ -48,5 +48,6 @@ else
 EOF
 
 fi
+mv .shop shop
 }
 unlock

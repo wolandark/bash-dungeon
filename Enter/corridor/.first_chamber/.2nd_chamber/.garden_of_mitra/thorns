@@ -33,9 +33,9 @@ if [[ \$1 == poem ]]; then
 
 	Add it to your inventory with:
 
-	< export I=poh,\$I >
+	< export I=PoH,\$I >
 
-	We will use 'poh' since its shorter
+	We will use 'PoH' since its shorter
 INNER_EOF
 	exit 0
 fi

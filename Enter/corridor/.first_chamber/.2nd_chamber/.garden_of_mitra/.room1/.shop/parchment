@@ -1,0 +1,33 @@
+ ______________________________________________________________________
+/\                                                                     \
+\_|                                                                    |
+  | Sourcing, in bash, is the act of making functions and variables    |
+  |                                                                    |
+  | that live inside a script, available at your current bash session. |
+  |                                                                    |
+  | Meaning that the variables and functions that are written inside a |
+  |                                                                    |
+  | shell script, can also be accessed from your normal terminal.      |
+  |                                                                    |
+  | Sourcing a bash script in essence, changes the shell behavior.    |
+  |                                                                    |
+  | The syntax of sourcing is as follows:                              |
+  |                                                                    |
+  | < source script.sh >                                               |
+  | or                                                                 |
+  | < . script.sh>                                                     |
+  |                                                                    |
+  | Now proceed with executing the shopkeeper while sourcing it.       |
+  |                                                                    |
+  | The script will be able to export the proper Gold balance once     |
+  |                                                                    |
+  | it is sourced.                                                     |
+  |                                                                    |
+  | Otherwise, no matter how much Gold you spend, the output of        |
+  |                                                                    |
+  | < echo $gold >                                                     |
+  |                                                                    |
+  | will remain 10                                                     |
+  |                                                                    |
+  |   _________________________________________________________________|_
+   \_/___________________________________________________________________/

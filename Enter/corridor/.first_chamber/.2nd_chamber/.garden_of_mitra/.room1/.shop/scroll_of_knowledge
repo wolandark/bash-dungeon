@@ -1,0 +1,13 @@
+ /"\/\_..------------------------------------------------------------------._/\/"\
+(     _||                                                                 ||_     )
+ \_/\/ || Scripts in bash, run inside their own sub-shells and are not    || \/\_/
+       ||                                                                 ||
+       || able to change the current shell's parameters or behavior.      ||
+       ||                                                                 ||
+       || This is something you need to know early on, as it can become   ||
+       ||                                                                 ||
+       || annoying in the future when you start writing your own scripts. ||
+       ||                                                                 ||
+ /"\/\_|-------------------------------------------------------------------|_/\/"\
+(     _|                                                                   |_     )
+ \_/\/ `-------------------------------------------------------------------' \/\_/
