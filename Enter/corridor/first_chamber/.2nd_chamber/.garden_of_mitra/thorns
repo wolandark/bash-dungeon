@@ -1,6 +1,6 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 
-cat <<EOF 
+cat <<EOF
 
 The path is thorny and rigid.
 
@@ -10,18 +10,18 @@ Everything can hurt you and everything will!
 
 EOF
 
-is_hurt(){
-	if [[ -z $HP ]]; then
-		echo -e "You must set your HP to play!\n"
-	else
-		(( HP -= 1 ))
-		echo -e "Thorns pierce your toes"
-		echo -e "Your HP is: $HP \n"
-	fi
+is_hurt() {
+  if [[ -z $HP ]]; then
+    echo -e "You must set your HP to play!\n"
+  else
+    ((HP -= 1))
+    echo -e "Thorns pierce your toes"
+    echo -e "Your HP is: $HP \n"
+  fi
 }
 is_hurt
 
-cat <<EOF > potioneer
+cat <<EOF >potioneer
 #!/usr/bin/env bash 
 
 if [[ \$1 == poem ]]; then
