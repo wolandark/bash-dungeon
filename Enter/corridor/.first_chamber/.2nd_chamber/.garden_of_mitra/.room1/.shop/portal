@@ -1,0 +1,21 @@
+We can create symlinks (symbolic links) in linux.
+
+symlinks are shortcuts to files, binaries or directories.
+
+Lets create a symlink from the poem you found a few dungeons back
+
+to the current directory.
+
+The spell for a symlink is:
+
+< ln -s original_path destination_path > 
+
+Remember that < .. > means behind and < . > means here.
+
+Make a symlink with:
+
+< ln -s ../../../peom . >
+
+Then you can use 'cat' to read the poem right here,
+
+eventhough its three directories behind.

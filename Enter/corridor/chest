@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash 
 
 cat <<EOF
 
@@ -20,4 +20,4 @@ Neat huh?
 
 EOF
 
-mv .first_chamber first_chamber >>/dev/null
+mv .first_chamber first_chamber 2>/dev/null

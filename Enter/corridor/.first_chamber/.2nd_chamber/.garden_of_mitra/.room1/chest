@@ -1,18 +1,18 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 echo -e "This chest is locked!\nYou need the proper key to enter!"
 
 echo "Enter Key value: "
 read -r val
 
-unlock() {
-  lock_val=256
-  if [[ $val != "$lock_val" ]]; then
-    echo "Wrong!"
-    exit 0
-  else
-    echo "Correct! You found a scroll of knowledge!"
-    cat <<'EOF' >scroll_of_knowledge
+unlock(){
+lock_val=256
+if [[ $val != "$lock_val" ]]; then
+	echo "Wrong!"
+	exit 0
+else
+	echo "Correct! You found a scroll of knowledge!"
+	cat <<'EOF' >scroll_of_knowledge
  /"\/\_..-------------------------------------------------------------------------------._/\/"\
 (     _||                                                                              ||_     )
  \_/\/ || Piping is the act of sewing commands together to change their output.        || \/\_/
@@ -47,7 +47,7 @@ unlock() {
  \_/\/ `--------------------------------------------------------------------------------' \/\_/
 EOF
 
-  fi
-  mv .shop shop
+fi
+mv .shop shop 2>/dev/null
 }
 unlock

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 lock_val=$(cat poem | wc -l)
 
@@ -19,10 +19,10 @@ cat <<EOF >../spell
 EOF
 
 if [[ $val != "$lock_val" ]]; then
-  echo "Wrong!"
-  exit 0
+	echo "Wrong!"
+	exit 0
 else
-  echo "Correct! You found 10 gold coins!"
+	echo "Correct! You found 10 gold coins!"
 fi
 
 cat <<EOF >gold
@@ -39,4 +39,4 @@ echo \$gold
 
 EOF
 
-mv .garden_of_mitra garden_of_mitra
+mv .garden_of_mitra garden_of_mitra 2>/dev/null

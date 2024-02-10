@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
+mv ../.room2 ../room2 2>/dev/null
 (return 0 2>/dev/null) && sourced=1 || sourced=0
 if [[ $sourced == 0 ]]; then
-  echo "YOU MUST SOURCE THIS SCRIPT"
-  exit 1
+	echo "YOU MUST SOURCE THIS SCRIPT"
+	exit 1
 fi
 
 if [[ -z $gold ]]; then
-  echo "YOU HAVE NOT SET YOUR GOLD VARIABLE!"
+	echo "YOU HAVE NOT SET YOUR GOLD VARIABLE!"
 fi
 
 write_dart() {
-  cat <<'EOF' >dart
+	cat <<'EOF' >dart
 Darts allow you to attack enemies from 
 
 A distance without risking your HP.
@@ -24,7 +25,7 @@ EOF
 }
 
 write_portal() {
-  cat <<'EOF' >portal
+	cat <<'EOF' >portal
 We can create symlinks (symbolic links) in linux.
 
 symlinks are shortcuts to files, binaries or directories.
@@ -50,7 +51,7 @@ EOF
 }
 
 write_poh() {
-  cat <<'EOF' >potion_of_health
+	cat <<'EOF' >potion_of_health
 Add this point, you should have two PoHs.
 
 You might want to create a dedicated variable 
@@ -68,7 +69,7 @@ EOF
 }
 
 write_pom() {
-  cat <<'EOF' >potion_of_magic
+	cat <<'EOF' >potion_of_magic
 The PoM comes in handy in a future room.
 
 You might want to create a dedicated variable 
@@ -86,7 +87,7 @@ EOF
 }
 
 write_trick() {
-  cat <<'EOF' >trick
+	cat <<'EOF' >trick
 The shell uses emacs bindings by default.
 
 Emcas is the GNU editor and its a rather complicated one.
@@ -111,42 +112,42 @@ echo -e "Enter the number of the item\n"
 echo -e "Ctrl+C to exit\n"
 echo -e "What do you wish to buy?\n"
 select item in Dart Portal PoH PoM Trick; do
-  case $item in
-    Dart)
-      price=2
-      write_dart
-      ;;
-    Portal)
-      price=4
-      write_portal
-      ;;
-    PoH)
-      price=9
-      write_poh
-      ;;
-    PoM)
-      price=10
-      write_pom
-      ;;
-    Trick)
-      price=3
-      write_trick
-      ;;
-    *)
-      echo "Invalid option. Please select a valid number."
-      continue
-      ;;
-  esac
+	case $item in
+	Dart)
+		price=2
+		write_dart
+		;;
+	Portal)
+		price=4
+		write_portal
+		;;
+	PoH)
+		price=9
+		write_poh
+		;;
+	PoM)
+		price=10
+		write_pom
+		;;
+	Trick)
+		price=3
+		write_trick
+		;;
+	*)
+		echo "Invalid option. Please select a valid number."
+		continue
+		;;
+	esac
 
-  echo "You selected $item."
-  echo "Price: $price Gold"
-  echo "Do you wish to purchase $item y/n?"
-  read -r ans
-  if [[ $ans == y ]] && [[ $gold -ge $price ]]; then
-    ((gold -= price))
-    echo "You have $gold remaining Gold"
-  else
-    echo "You don't have enough Gold"
-    echo "Be gone, peasant!"
-  fi
+	echo "You selected $item."
+	echo "Price: $price Gold"
+	echo "Do you wish to purchase $item y/n?"
+	read -r ans
+	if [[ $ans == y ]] && [[ $gold -ge $price ]]; then
+		((gold -= price))
+		echo "You have $gold remaining Gold"
+	else
+		echo "You don't have enough Gold"
+		echo "Be gone, peasant!"
+	fi
 done

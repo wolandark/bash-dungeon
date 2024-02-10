@@ -1,0 +1,8 @@
+
+The first commandline argument is $1, the second $2 and so on ...
+
+Example: 
+	script.sh arg1 arg2 arg3 ...
+
+Now you know what to do when a script asks for a $1 ;)
+

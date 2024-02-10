@@ -1,0 +1,14 @@
+#!/usr/bin/env bash 
+
+key="76.45161290322580645161"
+: 237 / 3.1
+
+if [[ $1 != $key ]]; then
+	echo -e "You must enter the correct floating point key value\n"
+	echo -e "Enter the result of 237 / 3.1 as \$1\n"
+else
+	echo -e "Well done! Collect your loot!\n" 
+fi
+
+
+

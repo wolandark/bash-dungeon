@@ -1,66 +1,67 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 
 rat_HP=7
 sword_damage=5
 long_sword_damage=10
 
-has_sword() {
-  if [[ $I == "short_sword" ]]; then
-    declare -g sword_type="short"
-    declare -g damage=$sword_damage
-  elif [[ $I == long_sword ]]; then
-    declare -g sword_type="long"
-    declare -g damage=$long_sword_damage
-  else
-    echo "Invalid sword type"
-    exit 1
-  fi
+has_sword(){
+	if [[ $I == "short_sword" ]]; then
+		declare -g sword_type="short"
+		declare -g damage=$sword_damage
+	elif [[ $I == long_sword ]]; then
+		declare -g sword_type="long"
+		declare -g damage=$long_sword_damage
+	else
+		echo "Invalid sword type"
+		exit 1
+	fi
 }
 
-remains() {
-  cat <<EOF >rat_remains
+remains(){
+cat <<EOF > rat_remains 
 
 Smelly stinking rat meat! 
 
 Nothing worthy here! 
 
 EOF
-  mv .2nd_chamber 2nd_chamber >>/dev/null
+mv .2nd_chamber 2nd_chamber 2>/dev/null
 }
 
-is_dead() {
-  if ((rat_HP <= 0)); then
-    declare -g rat_is_dead="dead"
-  fi
+is_dead(){
+	if (( rat_HP <= 0 )); then
+		declare -g rat_is_dead="dead"
+	fi
 }
 
 echo -e "The rat has $rat_HP HP\n"
 echo -e "The rat bites!\n"
-echo -e "attack rat? y/n \n"
-read -r ans
+echo -e "attack rat? y/n \n" 
+read -r ans 
 
 has_sword
-if [[ $ans == 'y' ]]; then
-  echo -e "You attack the rat with your $sword_type sword!\n"
-  ((rat_HP -= damage))
-  is_dead
-  echo -e "The rat takes $damage damage from your $sword_type sword!\n"
-  if [[ $rat_is_dead == "dead" ]]; then
-    echo "You killed the rat!"
-    remains
-    exit 0
-  fi
-  echo -e "The rat has $rat_HP HP\n"
-  echo -e "Attack again? y/n \n"
-  read -r ans2
-  if [[ $ans2 == 'y' ]]; then
-    echo -e "You attack the rat with your $sword_type sword!\n"
-    ((rat_HP -= damage))
-    is_dead
-    if [[ $rat_is_dead == "dead" ]]; then
-      echo "You killed the rat!"
-      remains
-      exit 0
-    fi
-  fi
+if [[ $ans == 'y' ]]; then 
+	echo -e "You attack the rat with your $sword_type sword!\n"
+	(( rat_HP -= damage ))
+	is_dead
+	echo -e "The rat takes $damage damage from your $sword_type sword!\n"
+	if [[ $rat_is_dead == "dead" ]]; then 
+		echo "You killed the rat!"
+		remains
+		exit 0
+	fi
+	echo -e "The rat has $rat_HP HP\n"
+	echo -e "Attack again? y/n \n"
+	read -r ans2
+	if [[ $ans2 == 'y' ]]; then 
+		echo -e "You attack the rat with your $sword_type sword!\n"
+		(( rat_HP -= damage ))
+		is_dead
+		if [[ $rat_is_dead == "dead" ]]; then 
+			echo "You killed the rat!"
+			remains
+			exit 0
+		fi
+	fi
 fi
+

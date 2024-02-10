@@ -1,0 +1,17 @@
+ ________________________________________________________________________
+/\                                                                       \
+\_| Bash can perform integer arithmetics very well.                      |
+  |                                                                      |
+  | But when it comes to floating point arithmetics, it's a bit lacking. |
+  |                                                                      |
+  | There are however, workarounds.                                      |
+  |                                                                      |
+  | The most common one is to 'echo' the operation into < bc -l >        |
+  |                                                                      |
+  | Try this now:                                                        |
+  |                                                                      |
+  | < echo 12 / 2.2 | bc -l >                                            |
+  |                                                                      |
+  | Use this knowledge to open the vault and progress.                   |
+  |   ___________________________________________________________________|_
+   \_/_____________________________________________________________________/
