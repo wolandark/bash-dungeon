@@ -1,0 +1,9 @@
+-------------------------------------------
+-- word of power is 'alias'              --
+--                                       --
+-- Use it to make nicknames for commands --
+--                                       --
+-- Example:                              --
+--                                       --
+-- alias rm='trash-put'                  --
+-------------------------------------------

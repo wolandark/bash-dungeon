@@ -1,0 +1,41 @@
+'rm' is the command we use to delete things in the shell.
+
+'rm' is a very powerful command that can remove files and directories
+
+Completely from your filesystem.
+
+Meaning that they wont end up in a trash can! They will be gone!
+
+FOREVER AND EVER!
+
+To delete a directory with all of its contents, we can use:
+
+< rm -rf dir >
+
+The -f flag means that it will force remove everything and the -r 
+
+stands for recursively removing everything.
+
+We can make this dangerous command slightly safer by doing:
+
+< rm -ri dir >
+
+The -i flag makes the 'rm' command interactive.
+
+It will ask you every time if it should remove something.
+
+There is yet a safer way to remove things that allows us to
+
+restore them if we make a mistake.
+
+Install the following package from your distro's package manager.
+
+'trash-cli' 
+
+Next time you want to delete something, use:
+
+< trash-put file or dir >
+
+And if you want to restore it later, use:
+
+< trash-restore >
