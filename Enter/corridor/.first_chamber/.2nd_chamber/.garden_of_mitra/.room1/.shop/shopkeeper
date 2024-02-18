@@ -115,22 +115,23 @@ select item in Dart Portal PoH PoM Trick; do
 	case $item in
 	Dart)
 		price=2
-		write_dart
+		if [[ gold -ge 2 ]]; then write_dart; fi
 		;;
 	Portal)
 		price=4
-		write_portal
+		if [[ gold -ge 4 ]]; then write_portal; fi
 		;;
 	PoH)
 		price=9
-		write_poh
+		if [[ gold -ge 9 ]]; then write_poh; fi
 		;;
 	PoM)
 		price=10
-		write_pom
+		if [[ gold -ge 10 ]]; then write_pom; fi
 		;;
 	Trick)
 		price=3
+		if [[ gold -ge 3 ]]; then write_trick; fi
 		write_trick
 		;;
 	*)
