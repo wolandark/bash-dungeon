@@ -2,11 +2,6 @@
 
 lock_val=$(cat poem | wc -l)
 
-echo -e "This chest is locked!\nYou need the proper key to enter!"
-
-echo "Enter Key value: "
-read -r val
-
 cat <<EOF >../spell
 ###############################################
 # < cat filename  | wc -l >                   #
@@ -17,6 +12,12 @@ cat <<EOF >../spell
 #                                             #
 # #############################################
 EOF
+
+echo -e "This chest is locked!\nYou need the proper key to enter!"
+
+echo "Enter Key value: "
+read -r val
+
 
 if [[ $val != "$lock_val" ]]; then
 	echo "Wrong!"
