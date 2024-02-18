@@ -1,0 +1,4 @@
+#!/usr/bin/env bash 
+
+mkdir ../../../cellar 2>/dev/null 
+
