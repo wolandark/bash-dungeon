@@ -1,4 +1,7 @@
 # Bash Dungeon
+<div align="center">
+<img src="https://github.com/wolandark/bash-dungeon/assets/107309764/7846dd64-fac7-489b-8730-d369149420fe" style="width:90%;">
+</div>
 
 A dungeon crawler game in bash where the dungeons are directories.<br> Inspired by [Dungeons And Directories](https://github.com/wheybags/DungeonsAndDirectories) and [Bash Crawl](https://gitlab.com/slackermedia/bashcrawl).<br>
 
