@@ -42,7 +42,7 @@ Remember that < .. > means behind and < . > means here.
 
 Make a symlink with:
 
-< ln -s ../../../peom . >
+< ln -s ../../../poem . >
 
 Then you can use 'cat' to read the poem right here,
 
