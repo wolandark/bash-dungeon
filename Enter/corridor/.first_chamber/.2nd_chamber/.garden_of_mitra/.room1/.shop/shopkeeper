@@ -90,7 +90,7 @@ write_trick() {
 	cat <<'EOF' >trick
 The shell uses emacs bindings by default.
 
-Emcas is the GNU editor and its a rather complicated one.
+Emacs is the GNU editor and its a rather complicated one.
 
 We are only concered with a handful of emacs key bindings.
 
