@@ -10,12 +10,12 @@
 --                                                                                     --
 -- To make 'grep' more visually apealing, enter the following spell:                   --
 --                                                                                     --
--- < alias grep='grep --color=always' >                                                --
+-- «alias grep='grep --color=always' »                                               --
 --                                                                                     --
 -- There is a Pass key hidden inside the mess of giberish that is the LoremIpsum file. --
 --                                                                                     --
 -- Use grep to find the line that contains that word.                                  --
 --                                                                                     --
--- < grep 'word' filename >                                                            --
+-- «grep 'word' filename »                                                           --
 --                                                                                     --
 -----------------------------------------------------------------------------------------

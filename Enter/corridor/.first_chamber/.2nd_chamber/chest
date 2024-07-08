@@ -2,9 +2,9 @@
 
 lock_val=$(cat poem | wc -l)
 
-cat <<EOF >../spell
+cat <<EOF »../spell
 ###############################################
-# < cat filename  | wc -l >                   #
+# «cat filename  | wc -l »                  #
 #                                             #     
 # There are many ways to count words or lines #
 #                                             #
@@ -32,7 +32,7 @@ Here are 10 gold coins.
 
 Create a *gold* variable and asign the value of 10 to it.
 
-< export gold=10 >
+«export gold=10 »
 
 You can always check your gold with:
 

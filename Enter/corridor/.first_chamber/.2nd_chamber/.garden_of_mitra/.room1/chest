@@ -19,7 +19,7 @@ else
        ||                                                                              ||
        || You have already used Piping when you used:                                  ||
        ||                                                                              ||
-       || < cat poem | wc -l >                                                         ||
+       || «cat poem | wc -l »                                                        ||
        ||                                                                              ||
        || In that spell, you piped the output of 'cat' to the input of 'wc -l'         ||
        ||                                                                              ||
@@ -31,16 +31,16 @@ else
        ||                                                                              ||
        || Now try to find out how you can make 'grep' case insensitive by              ||
        ||                                                                              ||
-       || piping < grep --help > to another instance of 'grep' that looks for the word ||
+       || piping «grep --help »to another instance of 'grep' that looks for the word ||
        ||                                                                              ||
        || 'case'                                                                       ||
        ||                                                                              ||
-       || < grep --help | grep 'case' >                                                ||
+       || «grep --help | grep 'case' »                                               ||
        ||                                                                              ||
        || Then use that flag to look for the word 'pass' in the LoremIpsum file.       ||
        ||                                                                              ||
        || Hint:                                                                        ||
-       || < grep -i etc ... >                                                          ||
+       || «grep -i etc ... »                                                         ||
        ||                                                                              ||
  /"\/\_|--------------------------------------------------------------------------------|_/\/"\
 (     _|                                                                                |_     )

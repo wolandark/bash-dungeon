@@ -4,13 +4,13 @@ The key to the chest, is the line count of them poem.
 
 You need a spell for that! 
 
-Look behind by using the < ls .. > spell 
+Look behind by using the «ls .. »spell 
 
 Have you missed something?
 
-< .. > always means one directory behind. 
+«.. »always means one directory behind. 
 
-Can you figure out how to use cat with < .. >
+Can you figure out how to use cat with «.. »
 
 to read the spell you left behind? 
 

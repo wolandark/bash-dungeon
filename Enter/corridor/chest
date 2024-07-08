@@ -6,11 +6,11 @@ You find an amulet of color.
 
 To use it, attach it to your torch with
 
-< --color=always > 
+«--color=always »
 
 You can also set an alias for it like:
 
-< alias ls='ls --color=always' >
+«alias ls='ls --color=always' »
 
 From now on, scripts, files and directories 
 

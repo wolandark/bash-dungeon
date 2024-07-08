@@ -6,11 +6,11 @@
   |                                                                      |
   | There are however, workarounds.                                      |
   |                                                                      |
-  | The most common one is to 'echo' the operation into < bc -l >        |
+  | The most common one is to 'echo' the operation into «bc -l »       |
   |                                                                      |
   | Try this now:                                                        |
   |                                                                      |
-  | < echo 12 / 2.2 | bc -l >                                            |
+  | «echo 12 / 2.2 | bc -l »                                           |
   |                                                                      |
   | Use this knowledge to open the vault and progress.                   |
   |   ___________________________________________________________________|_
