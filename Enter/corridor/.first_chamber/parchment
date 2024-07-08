@@ -6,8 +6,8 @@
   |                                                        |
   | can change.                                            |
   |                                                        |
-  | You can always use *$* before a variable name to print |
-  |                                                        |
+  | You can always use « $ » before a variable name to     |
+  | print                                                  |
   | it's contents to your STDOUT.                          |
   |                                                        |
   | STDOUT is just a fancy name for your terminal. ;)      |

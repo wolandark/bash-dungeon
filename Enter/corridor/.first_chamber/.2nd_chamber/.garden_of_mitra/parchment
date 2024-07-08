@@ -9,7 +9,7 @@
   |                                                        |
   | set your HP variable to 100 and proceed with the game. |
   |                                                        |
-  | «export HP=100 »                                     |
+  | « export HP=100 »                                      |
   |                                                        |
   |                                                        |
   |   _____________________________________________________|_

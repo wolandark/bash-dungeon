@@ -1,21 +1,19 @@
- _______________________________________________________________________
-/\                                                                      \
-\_|                                                                     |
-  | You may have already realizes that you can use «cat »to see inside|
-  |                                                                     |
-  | the scripts as well. While this is good method for quickly checking |
-  |                                                                     |
-  | a short script or file, it will become annoying for longer files.   |
-  |                                                                     |
-  | In this chamber, there is a poetry book. Try the cat command on it  |
-  |                                                                     |
-  | but add this to the end of your spell «| less »                   |
-  |                                                                     |
-  | You will be able to scroll up and down with arrow keys or the vi    |
-  |                                                                     |
-  | keys: j for down and k for up                                       |
-  |                                                                     |
-  | Press *q* to quit *less*                                            |
-  |                                                                     |
-  |   __________________________________________________________________|_
-   \_/____________________________________________________________________/
+  _________________________________________________________________________
+ /\                                                                        \
+ \_| You may have already realized that you can use « cat » to see inside  |
+   |                                                                       |
+   | the scripts as well. While this is a good method for quickly checking |
+   |                                                                       |
+   | a short script or file, it will be annoying for longer files.         |
+   |                                                                       |
+   | In this chamber, there is a poetry book. Try the cat command on it    |
+   |                                                                       |
+   | but add this to the end of your spell « | less »                      |
+   |                                                                       |
+   | You will be able to scroll up and down with arrow keys or the vi      |
+   |                                                                       |
+   | keys: j for down and k for up                                         |
+   |                                                                       |
+   | Press q to quit less                                                  |
+   |   ____________________________________________________________________|_
+    \_/______________________________________________________________________/

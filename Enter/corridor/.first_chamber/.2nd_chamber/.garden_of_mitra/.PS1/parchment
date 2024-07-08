@@ -14,7 +14,7 @@
   | so that you can type easier.                                                  |
   |                                                                               |
   | Enter this spell:                                                             |
-  | «export PS1=$PS1'\n' »                                                      |
+  | « export PS1=$PS1'\n' »                                                       |
   |                                                                               |
   | Now you can type below your prompt                                            |
   |                                                                               |

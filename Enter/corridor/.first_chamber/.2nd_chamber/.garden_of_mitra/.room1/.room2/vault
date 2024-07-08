@@ -38,7 +38,7 @@ cs ()
 ```
 to type that in a single line:
 
-«cs() { cd $* && ls; } »
+« cs() { cd $* && ls; } »
 
 type the above line into your terminal and use the 'cs' 
 

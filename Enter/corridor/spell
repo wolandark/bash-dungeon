@@ -1,12 +1,12 @@
    ##########################################################################
    #                                                                        #
-   # You can use the «head -n 1 »spell to take a peek at what a file holds#
-   #                                                                        #
+   # You can use the « head -n 1 » spell to take a peek at what a file      #
+   # holds.                                                                 #
    # Use this power to identify what the chest is!                          #
    #                                                                        #
    # If you see a '#!', it means that its a script, which you can run       #
    # by preceeding it's name with './'                                      #
-   # Like «./chest »                                                      #
+   # Like « ./chest »                                                       #
    #                                                                        #
    # BEHOLD!                                                                #
    # While all the scripts in this game are safe,                           #

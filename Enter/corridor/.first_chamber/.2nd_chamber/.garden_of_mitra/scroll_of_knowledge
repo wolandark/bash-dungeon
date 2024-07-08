@@ -20,9 +20,9 @@
        ||                                                             ||
        || In that case, use the following syntax:                     ||
        ||                                                             ||
-       || «export I=long_sword,$I »                                 ||
+       || « export I=long_sword,$I »                                  ||
        ||                                                             ||
-       || With that, the long_sword gets added to your inventory and  ||
+       || With that, the long_sword is added to your inventory and    ||
        ||                                                             ||
        || if you echo $I, you will see that both items are in there.  ||
        ||                                                             ||

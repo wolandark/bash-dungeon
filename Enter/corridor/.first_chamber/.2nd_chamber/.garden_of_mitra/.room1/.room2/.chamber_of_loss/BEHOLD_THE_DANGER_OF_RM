@@ -10,7 +10,7 @@ FOREVER AND EVER!
 
 To delete a directory with all of its contents, we can use:
 
-«rm -rf dir »
+« rm -rf dir »
 
 The -f flag means that it will force remove everything and the -r 
 
@@ -18,7 +18,7 @@ stands for recursively removing everything.
 
 We can make this dangerous command slightly safer by doing:
 
-«rm -ri dir »
+« rm -ri dir »
 
 The -i flag makes the 'rm' command interactive.
 
@@ -34,8 +34,8 @@ Install the following package from your distro's package manager.
 
 Next time you want to delete something, use:
 
-«trash-put file or dir »
+« trash-put file or dir »
 
 And if you want to restore it later, use:
 
-«trash-restore »
+« trash-restore »

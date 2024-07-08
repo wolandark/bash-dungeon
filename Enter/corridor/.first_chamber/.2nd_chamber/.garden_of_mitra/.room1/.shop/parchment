@@ -9,13 +9,13 @@
   |                                                                    |
   | shell script, can also be accessed from your normal terminal.      |
   |                                                                    |
-  | Sourcing a bash script in essence, changes the shell behavior.    |
+  | Sourcing a bash script in essence, changes the shell behavior.     |
   |                                                                    |
   | The syntax of sourcing is as follows:                              |
   |                                                                    |
-  | «source script.sh »                                              |
+  | « source script.sh »                                               |
   | or                                                                 |
-  | «. script.sh»                                                    |
+  | « . script.sh »                                                    |
   |                                                                    |
   | Now proceed with executing the shopkeeper while sourcing it.       |
   |                                                                    |
@@ -25,7 +25,7 @@
   |                                                                    |
   | Otherwise, no matter how much Gold you spend, the output of        |
   |                                                                    |
-  | «echo $gold »                                                    |
+  | « echo $gold »                                                     |
   |                                                                    |
   | will remain 10                                                     |
   |                                                                    |

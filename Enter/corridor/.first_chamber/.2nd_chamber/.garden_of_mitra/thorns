@@ -21,7 +21,7 @@ is_hurt(){
 }
 is_hurt
 
-cat <<EOF » potioneer
+cat <<EOF > potioneer
 #!/usr/bin/env bash 
 
 if [[ \$1 == poem ]]; then
@@ -33,7 +33,7 @@ if [[ \$1 == poem ]]; then
 
 	Add it to your inventory with:
 
-	«export I=PoH,\$I »
+	« export I=PoH,\$I »
 
 	We will use 'PoH' since its shorter
 INNER_EOF
