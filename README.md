@@ -3,7 +3,7 @@
 <img src="https://github.com/wolandark/bash-dungeon/assets/107309764/7846dd64-fac7-489b-8730-d369149420fe" style="width:90%;">
 </div>
 
-A dungeon crawler game in bash where the dungeons are directories.<br> Inspired by [Dungeons And Directories](https://github.com/wheybags/DungeonsAndDirectories) and [Bash Crawl](https://gitlab.com/slackermedia/bashcrawl).<br>
+A dungeon crawler game in bash where the dungeons are directories.<br> Inspired by [Dungeons And Directories](https://github.com/wheybags/DungeonsAndDirectories) and [Bash Crawl](https://gitlab.com/slackermedia/bashcrawl). (WIP) <br>
 
 _This game is intended to teach new users how to use their shell in a fun and interactive way.<br>_
 
