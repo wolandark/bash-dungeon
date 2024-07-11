@@ -28,14 +28,14 @@ if [[ \$1 == poem ]]; then
 	echo -e "Excellent!\n Here, Have a potion of health\n You should add it to your inventory\n"
 	mv .PS1 PS1 2>/dev/null
 	mv .room1 room1 2>/dev/null
-	cat <<'INNER_EOF' > potion_of_health
-	Potion of Health
+cat <<'INNER_EOF' > potion_of_health
+Potion of Health
 
-	Add it to your inventory with:
+Add it to your inventory with:
 
-	« export I=PoH,\$I »
+« export I=PoH,\$I »
 
-	We will use 'PoH' since its shorter
+We will use 'PoH' since its shorter
 INNER_EOF
 	exit 0
 fi

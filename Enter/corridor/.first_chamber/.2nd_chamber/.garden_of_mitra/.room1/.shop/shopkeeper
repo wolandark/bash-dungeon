@@ -36,13 +36,13 @@ to the current directory.
 
 The spell for a symlink is:
 
-«ln -s original_path destination_path »
+« ln -s original_path destination_path »
 
-Remember that «.. »means behind and «. »means here.
+Remember that « .. » means behind and « . » means here.
 
 Make a symlink with:
 
-«ln -s ../../../poem . »
+« ln -s ../../../poem . »
 
 Then you can use 'cat' to read the poem right here,
 
@@ -64,7 +64,7 @@ By now, you should know how to do that.
 
 You can check how many PoHs you have with:
 
-«echo $PoH »
+« echo $PoH »
 EOF
 }
 
@@ -82,7 +82,7 @@ By now, you should know how to do that.
 
 You can check how many PoMs you have with:
 
-«echo $PoM »
+« echo $PoM »
 EOF
 }
 
@@ -152,3 +152,4 @@ select item in Dart Portal PoH PoM Trick; do
 		echo "Be gone, peasant!"
 	fi
 done
+
