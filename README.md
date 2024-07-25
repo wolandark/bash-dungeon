@@ -36,3 +36,7 @@ clone the repository and cd into it<br>
 `ls`<br> 
 `cat parchment`<br> 
 
+# Contribution 
+If you have any ideas, please open a new discussion.<br>
+If you find any bugs or issues, please submit an issue.<br>
+When submitting PRs, please follow  [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) .
